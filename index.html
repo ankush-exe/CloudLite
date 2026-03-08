@@ -1,94 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloudlite</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<title>CloudLite Weather</title>
 
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
 </head>
+
 <body>
-    <div class="main-content">
-    <header>
-        <div class="navbar">
-            <i class="fa-solid fa-cloud"></i>
 
-            <h3>Cloudlite</h3>
-        
+<div class="container">
 
-        </div>
-        <hr style="width:80%;margin:auto">
-        
-    </header>
-    <main>
-        <div class="find">
-            <h1>Find Your Weather</h1>
-            <p>Get the latest weather forecast for any city in the world</p>
-            
+<header class="header">
 
-        </div>
-        <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Enter city name">
-            <button>Search</button>
+<div class="logo">
+<i class="fa-solid fa-cloud"></i>
+<h2>CloudLite</h2>
+</div>
 
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="forecast.html">Forecast</a>
+<a href="saved.html">Saved Cities</a>
+</nav>
 
+</header>
 
-        </div>
-        <div class="lowermain">
-        <div class="weather">
-            <div class="weathinfo">
-            <div class="country">India</div>
-            <div class="temp">24°C</div>
+<hr>
 
-            <div class="clouds">Partly cloudly</div>
-            </div>
-            <div class="img">
-                
-            </div>
-            <br>
-            <hr style="width:80%; opacity: 0.3; color:gray">
-            <div class="details">
-                <div class="logo">
-                <i class="fa-solid fa-temperature-arrow-down"></i>
-                <div class="feelslike">
-                    
-                    <div class="title">Feels like</div>
-                    <div class="value">24°C</div>
+<main class="main">
 
-                </div> 
-                </div> 
-                <div class="logo">  
-                    <i class="fa-solid fa-droplet"></i>
-                <div class="feelslike">
+<section class="intro">
 
+<h1>Find Your Weather</h1>
+<p>Get the latest weather forecast for any city</p>
 
-                    <div class="title">Humidity</div>
-                    <div class="value">65%</div>
+</section>
 
-                </div>
-                </div>
-                <div class="logo">
-                   <i class="fa-solid fa-wind"></i>
-                <div class="feelslike">
-                    <div class="title">Wind speed</div>
-                    <div class="value">5 m/s</div> 
+<section class="search-box">
 
-                </div>
-                </div>
-            </div>
+<i class="fa-solid fa-magnifying-glass"></i>
 
+<input
+type="text"
+id="cityInput"
+placeholder="Enter city name">
 
-        </div>
-    </main>
-    <footer>
-        <div class="foot">
-            Made by Ankush|2025
-        </div>
-    </footer>
-    </div>
+<button id="searchBtn">Search</button>
+
+</section>
+
+<section class="weather-card">
+
+<div class="weather-top">
+
+<div class="weather-info">
+
+<h3 id="cityName">India</h3>
+
+<div class="temperature" id="temperature">
+24°C
+</div>
+
+<p id="description">
+Partly cloudy
+</p>
+
+</div>
+
+<div class="weather-icon">
+
+<i class="fa-solid fa-cloud"></i>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="weather-details">
+
+<div class="detail">
+
+<i class="fa-solid fa-temperature-arrow-down"></i>
+
+<div>
+
+<p>Feels Like</p>
+
+<p id="feelsLike">24°C</p>
+
+</div>
+
+</div>
+
+<div class="detail">
+
+<i class="fa-solid fa-droplet"></i>
+
+<div>
+
+<p>Humidity</p>
+
+<p id="humidity">65%</p>
+
+</div>
+
+</div>
+
+<div class="detail">
+
+<i class="fa-solid fa-wind"></i>
+
+<div>
+
+<p>Wind</p>
+
+<p id="wind">5 m/s</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+<p>Made by Ankush | 2025</p>
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
